@@ -42,6 +42,9 @@ img {
   -o-border-radius: 10px;
   text-align: center;
 }
+.serial.done {
+  cursor: pointer;
+}
 .generate {
   font-family: "Righteous", sans-serif;
   display: block;

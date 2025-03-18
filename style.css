@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   background-color: var(--color2);
@@ -62,8 +63,15 @@ img {
   -ms-transition: background-color var(--transition);
   -o-transition: background-color var(--transition);
 }
-.generate:hover {
-  background-color: var(--color1-hover);
+@media (hover: hover) {
+  .generate:hover {
+    background-color: var(--color1-hover);
+  }
+}
+@media (hover: none) {
+  .generate:active {
+    background-color: var(--color1-hover);
+  }
 }
 .copyright {
   display: block;
